@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Tienda</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Mini Tienda 🛒</h1>
+
+  <div class="layout">
+    <section>
+      <h2>Productos</h2>
+      <div class="filtros">
+  <input type="text" id="buscador" placeholder="Buscar producto...">
+  
+  <label>
+    Precio máximo: <span id="precioValor">50</span> €
+    <input type="range" id="precioMax" min="0" max="50" value="50">
+  </label>
+</div>
+
+      <div id="productos" class="grid"></div>
+    </section>
+
+    <section>
+      <h2>Carrito</h2>
+      <div id="carrito"></div>
+
+      <p id="total"></p>
+
+      <button id="btnVaciar" type="button">Vaciar carrito</button>
+      <button id="btnComprar" type="button">Comprar</button>
+      <p id="mensajeCompra"></p>
+
+      </section>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+   </html>
